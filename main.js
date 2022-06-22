@@ -2,7 +2,7 @@ import { loadImage } from './functions/graphic.js';
 import { start, click } from './functions/mechanics.js'
 
 // let soundDir = confirm("Turn on NSFW mode?") ? "NSFW" : "NORMAL";
-let soundDir = false;
+let soundDir = "NORMAL";
 const gameMedia = {
     sounds: {
         "start": new Audio(`./sounds/${soundDir}/start.mp3`),
