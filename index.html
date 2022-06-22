@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--favico-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./pictures/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./pictures/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./pictures/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./pictures/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./pictures/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="./pictures/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="./pictures/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MineSweeper</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css" />
+    <script type="module" src="main.js"></script>
+</head>
+
+<body>
+    <div class="table">
+        <div class="row1c1 headerColumn">
+            <p class="inputText">SET WIDTH</p>
+            <input type="number" name="height" class="input" min="5" max="50" id="width" value="5"/>
+        </div>
+        <div class="row1c2 headerColumn">
+            <p class="inputText">SET HEIGHT</p>
+            <input type="number" name="width" class="input" min="5" max="50" id="height" value="5"/>
+        </div>
+        <div class="row1c3 headerColumn">
+            <input type="button" value="SWEEP IT" class="inputButton" id="button" />
+        </div>
+        <div class="row2c1" style="text-align: center;">
+            <p id="timer">TIMER</p>
+        </div>
+        <div class="row2c2" style="text-align: center;">
+            <p id="statusBar">STATUS BAR</p>
+        </div>
+        <div class="row2c3" style="text-align: center;">
+            <p id="flagAmount">BOMB</p>
+        </div>
+        <div class="row3">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>
